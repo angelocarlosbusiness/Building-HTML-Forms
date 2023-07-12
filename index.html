@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Page Title</title>
+  </head>
+  <body>
+    <form action="/form-handling-url" method="post">
+      <fieldset>
+        <legend>Add User</legend>
+        <div>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="first_name"
+            placeholder="Enter Your First Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="last_Name"
+            placeholder="Enter Your Last Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="emailAddress">Email Address</label>
+          <input
+            type="text"
+            id="emailAddress"
+            name="email_address"
+            placeholder="Enter Your Email Address"
+            required
+          />
+        </div>
+        <div>
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="Guest">Guest</option>
+          </select>
+        </div>
+        <div>
+          <p>Choose Your Favorite Programming Language</p>
+          <label>
+            <input type="radio" name="favorite_language" value="html" />
+            HTML
+          </label>
+          <label>
+            <input type="radio" name="favorite_language" value="css" />
+            CSS
+          </label>
+          <label>
+            <input type="radio" name="favorite_language" value="javascript" />
+            JavaScript
+          </label>
+        </div>
+        <div>
+          <label for="comments">Comments</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            cols="50"
+            placeholder="Enter your comments"
+          ></textarea>
+        </div>
+        <div>
+          <label for="currentDate">Current Date</label>
+          <input
+            type="date"
+            id="currentDate"
+            name="current_date"
+            value=""
+            required
+          />
+        </div>
+        <div>
+          <div>
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value="agree"
+              required
+            />
+            <label for="terms">Agree to terms and conditions</label>
+          </div>
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
